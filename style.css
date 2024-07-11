@@ -42,9 +42,7 @@ nav ul > button {
   border: 1px solid white;
   color: white;
 }
-#join b{
-  margin-left:0.3vw;
-}
+
 #learnify {
 
   border-radius: 4vw;  
@@ -62,7 +60,8 @@ nav ul > button {
 }
 #text h1 {
   font-size: 2vw;
-  line-height: 5vw;
+  line-height: 7vw;
+  font-family: 'Space Crusaders', sans-serif;
 }
 #section2 {
   height: 80vh;
@@ -102,7 +101,7 @@ color: white;
   color: white;
    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
    animation:slidebg 5s linear infinite;}
-#text button:hover{
+#text a:hover{
    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
    animation:slidebg 5s linear infinite;
 }
@@ -231,48 +230,59 @@ a{
 
 @media only screen and (max-width: 600px) {
   nav {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
     ul a {
       display: none;
     }
   }
   #logo {
-    width: 7vw;
+    width: 30vw;
     margin-top: 2vw;
     margin-left: 2vw;
   }
   #join {
     font-size: 2vw;
+    margin-top: 4vw;
     height: 3vw;
-    width: 7vw;
-    margin-right: 7vw;
+    width: 15vw;
+    background: none;
+    border: white solid 1px;
+    color: white !important;
+    margin-right: 0vw;
   }
-  #text p {
-    margin-top: -28vw;
-    font-size: 3vw;
+  .wrapper h1{
+    font-size: 9vw;
   }
   #text h1 {
-    font-size: 2vw;
-    margin-top: -1vw;
+    font-size: 10vw;
+    margin-top: 50vw;
   }
-  #text h1 > b {
-    font-size: 5vw;
-  }
-  #text {
-    line-height: 0vw;
-  }
-  #text button {
-    margin-top: 3vw;
-    z-index: -2;
+h1 span{
+  font-size: 5vw !important;
+}
+#break::after {
+    content: "\A";
+    white-space: pre;
+}
+
+  #text a {
+    margin-top: 9vw ;
+    z-index: 1;
     height: 4vw;
+    width: 50vw;
+    font-size: 3vw !important;
   }
-  #learnify {
-    display: none;
-  }
+
   #section2 {
     margin-top: -25vw;
+    height:50vh;
   }
   #section2 h2 {
     font-size: 10vw;
+    margin-top: 1vw !important;
   }
   #section2 button {
     width: 70vw;
@@ -294,6 +304,12 @@ a{
     margin-top: -6vw;
     justify-content: space-between;
   }
+  #section4 p{
+    font-size: 4vw;
+    margin-left:-13.5vw !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
   #post {
     margin-left: -5vw;
     margin-right: 6vw;
@@ -305,16 +321,7 @@ a{
     font-size: 1vw;
     margin-left: 6vw;
   }
-  #link2 {
-    display: block;
-    font-size: 2vw;
-    margin-left: 33vw;
-    border: solid white 0.2vw;
-    border-radius: 3vw;
-    background-color: none;
-    color: white;
-    width: 30vw;
-  }
+
   #section4 {
     display: flex;
     flex-direction: column;
@@ -354,9 +361,10 @@ a{
   }
 #invitation{
   color: white;
-    margin-top: -40vw;
+    margin-top: -45vw;
     text-align: center;
     font-size: 4vw;
+    line-height: -1vw;
   }
  #join2{
     border-radius: 2vw;
@@ -367,12 +375,15 @@ a{
     width: 40vw;
     height: 4vh;
     margin-left: 30vw;
-    margin-top: 2vw;
+  }
+  section{
+      line-height: 5vw;
   }
   #picked{
     margin-left: 12vw;
     width: 80vw;
   }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
