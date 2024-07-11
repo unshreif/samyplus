@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../images/fvicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+</head>
+<body>
+    <div class="loader"></div> 
+    <h1 class="scale-up-center">Coming Soon</h1>
+    <style>
+        h1{
+            color: #fff;
+        }
+        body{
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+    align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        img{
+            width:5vw;
+        }
+.loader {
+  height: 30px;
+  margin-top: 20vw;
+  aspect-ratio: 2;
+  background:
+    radial-gradient(farthest-side,#000 15%,#0000 18%)0 0/50% 100%,
+    radial-gradient(50% 100% at 50% 160%,#fff 95%,#0000) 0 0   /50% 50%,
+    radial-gradient(50% 100% at 50% -60%,#fff 95%,#0000) 0 100%/50% 50%;
+  background-repeat: repeat-x;
+  -webkit-mask: radial-gradient(50% 100%,#000 95%,#0000) 0 100%/50% 0% repeat-x;
+  animation: l3 1s infinite alternate ease-in;
+}
+@keyframes l3 {
+  0%,
+  70% {-webkit-mask-size:50% 100%}
+  85% {-webkit-mask-size:50% 0}
+  100% {-webkit-mask-size:50% 100%}
+}
+
+.scale-up-center{-webkit-animation:scale-up-center 3s cubic-bezier(.39,.575,.565,1.000) infinite both;animation:scale-up-center 3s cubic-bezier(.39,.575,.565,1.000) infinite both}
+@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+</body>
+</html>
