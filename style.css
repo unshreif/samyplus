@@ -55,6 +55,9 @@ nav ul > button {
   border: 1px solid white;
   color: white;
 }
+#section2 h2{
+  margin-top:10vw;
+}
 #text{
   margin-top:3vw;
 }
@@ -389,6 +392,9 @@ h1 span{
     margin-left: 12vw;
     width: 80vw;
   }
+  #section4{
+    top: -9vw !important;
+  }
 
 }
 
@@ -674,13 +680,10 @@ h1 span{
 
  #section3 {
   position: relative;
-  top: 0; /* Adjust as needed */
 }
 
 #section4 {
   position: relative;
-  top: 100px; /* Adjust to position section4 below section3 */
+  top:60px; 
 }
-#section2 h2{
-  top:50%;
-}
+
