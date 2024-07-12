@@ -76,7 +76,10 @@ nav ul > button {
   display: flex;
   flex-direction: row;
   gap: 4.5vw;
+<<<<<<< HEAD
   margin-top: 8vw !important;
+=======
+>>>>>>> 14d1b5b8267983faeb3655c6871a393b05bdf69e
   margin-left: 20vw;
 }
 
@@ -671,7 +674,12 @@ h1 span{
      bottom: 0px;
   }
 }
+ #section3 {
+  position: relative;
+  top: 0; 
+}
 
+<<<<<<< HEAD
  #section3 {
   position: relative;
   top: 0; /* Adjust as needed */
@@ -680,4 +688,9 @@ h1 span{
 #section4 {
   position: relative;
   top: 100px; /* Adjust to position section4 below section3 */
+=======
+#section4 {
+  position: relative;
+  top: 100px; 
+>>>>>>> 14d1b5b8267983faeb3655c6871a393b05bdf69e
 }
