@@ -223,12 +223,12 @@ section h1{
         align-items: center;
     }
     .name input{
-        width: 70%;
+        width: 70vw;
     }
     .name #fn{
           position: absolute;
-            top: 18.5%;
-            margin-left: -55vw;
+            top: 24.5%;
+            margin-left: -70vw;
             transform: translateY(-50%);
             color:grey;
             transition: all 0.5s;
@@ -240,46 +240,46 @@ section h1{
 }
 #l1{
      position: absolute;
-            top: 33%;
-            margin-left: -55vw;
+            top: 42%;
+            margin-left: -70vw;
             transform: translateY(-50%);
             color: gray;
             transition: all 0.5s;
 }
 #i2,#i3{
- width: 53vw;
+ width: 70vw;
  margin-left: -14vw;
 }
 #l2{
     position: absolute;
-            top: 48.5%;
+            top: 57.5%;
             margin-left: -10vw;
             transform: translateY(-50%);
             color: gray;
             transition: all 0.5s;
 }
 #in2 input:focus + label, #in2 input:not(:placeholder-shown) + label{
-      margin-top:-18vw;
+      margin-top:-2vw;
             font-size: 10px;
             color: white;
 }
 
 #l3{
     position: absolute;
-            top: 63.5%;
+            top: 72.5%;
             margin-left: -10vw;
             transform: translateY(-50%);
             color: gray;
             transition: all 0.5s;
 }
 #in3 input:focus + label, #in2 input:not(:placeholder-shown) + label{
-      margin-top:-21vw;
+      margin-top:-4vw;
             font-size: 10px;
             color: white;
 }
 .buttons{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     row-gap: 5vw;
@@ -293,11 +293,21 @@ section h1{
     font-size: 4vw;
 }
 #b1,#b2{
-    width: 70vw;
+    width: 30vw;
      border-radius: 9vw;
+}
+#b1:hover{
+    cursor: pointer;
+}
+#b2:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: white;
 }
 #b1{
 margin-left: 4vw;
+background:none;
+width: 45vw;
 }
 .container{
     margin-bottom: 5vw;
@@ -329,7 +339,7 @@ margin-left: 4vw;
 #loading1 {
     position: fixed;
     width: 100%;
-    height: 102%;
+    height: 103%;
     background: rgba(255, 255, 255, 0.9);
     z-index: 9999;
     display: flex;
@@ -394,5 +404,6 @@ margin-left: 4vw;
 </div>
 <div class="gradient-overlay"></div>
 </div>
+<br>
 </body>
 </html>
