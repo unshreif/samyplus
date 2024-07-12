@@ -76,10 +76,10 @@ nav ul > button {
   display: flex;
   flex-direction: row;
   gap: 4.5vw;
-  margin-top: 30vw !important;
+  margin-top: 8vw !important;
   margin-left: 20vw;
-	margin-top: 60vw !important;
 }
+
 #section4 img {
   width: 30vw;
 }
@@ -307,7 +307,7 @@ h1 span{
     display: none;
   }
   #section4 {
-    margin-top: -6vw;
+    margin-top: 8vw !important;
     justify-content: space-between;
   }
   #section4 p{
@@ -399,10 +399,7 @@ h1 span{
   #section2 {
     margin-top: -2vw;
   }
-  #section4 {
-    margin-top: 35vw;
-    margin-left: 15vw;
-  }
+
   #section3 p {
     display: none;
   }
@@ -675,3 +672,12 @@ h1 span{
   }
 }
 
+ #section3 {
+  position: relative;
+  top: 0; /* Adjust as needed */
+}
+
+#section4 {
+  position: relative;
+  top: 100px; /* Adjust to position section4 below section3 */
+}
