@@ -669,8 +669,12 @@ h1 span{
      bottom: 0px;
   }
 }
- #section4 {
-    margin-top: 8vw !important;
-    justify-content: space-between;
-  }
+ #section3 {
+  position: relative;
+  top: 0; 
+}
 
+#section4 {
+  position: relative;
+  top: 100px; 
+}
