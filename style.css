@@ -76,9 +76,8 @@ nav ul > button {
   display: flex;
   flex-direction: row;
   gap: 4.5vw;
-  margin-top: 30vw !important;
+  margin-top: 70vw !important;
   margin-left: 20vw;
-	margin-top: 80vw !important;
 }
 #section4 img {
   width: 30vw;
