@@ -682,5 +682,5 @@ h1 span{
   top: 100px; /* Adjust to position section4 below section3 */
 }
 #section2 h2{
-  margin-top:10vw;
+  top:10%;
 }
