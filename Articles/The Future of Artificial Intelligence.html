@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../file.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/fvicon.png">
+    <title>The Future of Artificial Intelligence</title>
+</head>
+<body>
+    <style>
+           nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+nav a {
+  margin: 1vw;
+  margin-bottom: 1vw;
+  text-decoration: none;
+  color: black;
+}
+#join:hover{
+  color: white;
+   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 5s linear infinite;}
+   @keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+nav ul{
+  margin-top:0vw;
+  margin-right: 1vw;
+  margin-top: 1vw;
+}
+#logo{
+  margin-top:0vw;
+  width: 5vw;
+  height: 5vw;
+  z-index: 1;
+}
+
+nav ul > button {
+ border-radius: 4vw;  
+  color: black;
+  cursor: pointer;
+  margin-left: 2vw;
+  background-color: none;
+  border: 1px solid white;
+  width: 6vw;
+  height: 5vh;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 2vw;
+}
+ul li{
+    line-height: 2vw;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background-color: white(141, 16, 16, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  z-index: 1000;
+  height: 4vw;
+  border-radius: 0vw 0vw 3vw 3vw;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+#colimg{
+      width: 8vw;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+.loader1 {
+  width: 40px;
+  aspect-ratio: 1;
+   --c: linear-gradient(#000 0 0);
+   --m: radial-gradient(farthest-side,#000 92%,#0000);
+  background: 
+    var(--c),var(--m),
+    var(--c),var(--m), 
+    var(--c),var(--m);
+  background-size: 8px 15px,8px 8px;
+  background-repeat: no-repeat;
+  animation: l14 1s infinite alternate;
+}
+@keyframes l14 {
+  0%,
+  10% {background-position: 0 0   ,0 100%,50% 0   ,50% 100%,100% 0   ,100% 100%}
+  33% {background-position: 0 100%,0 0   ,50% 0   ,50% 100%,100% 0   ,100% 100%}
+  66% {background-position: 0 100%,0 0   ,50% 100%,50% 0   ,100% 0   ,100% 100%}
+  90%,
+  100%{background-position: 0 100%,0 0   ,50% 100%,50% 0   ,100% 100%,100% 0   }
+}
+
+#loading1 {
+    position: fixed;
+    width: 100%;
+    height: 104vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2vw;
+}
+#content {
+    display: none;
+}
+.top{
+    margin-top: 3vw;
+    text-align: center;
+}
+.top h1{
+    line-height: 4vw;
+}
+.top img{
+    width: 80vw;
+    height: 50vw;
+    border-radius: 3vw;
+}
+.label{
+    margin-left: 7vw;
+    margin-top: 2vw;
+    background-color:gray ;
+    justify-items: center;
+    line-height: 1vw;
+    width: 5VW;
+    color: white;
+    background-color: #000;
+    height: 1vw;
+    font-size: 1vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3vw;
+}
+.label:hover{
+    cursor: pointer;
+}
+article{
+    padding: 3vw;
+}
+ footer a{
+        text-decoration: none;
+        color: #000;
+    }
+@media only screen and (max-width: 600px) {
+    ul li{
+        line-height: 7vw;
+    }
+    .head img{
+        width: 10vw;
+        z-index: 0;
+    }
+    .head a{
+        font-size: 3vw;
+        margin-top: 0.5vw;
+    }
+   main{
+h3,p,ul{
+    line-height: 8vw;
+}
+   }
+    nav{
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        color: black !important;
+    }
+    nav ul > a{
+        display: block !important;
+        margin-top: 1vw;
+    }
+    nav ul {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+    nav ul > button{
+        border: #000 1px solid !important;
+        margin-top: 0vw !important;
+    }
+    #join{
+        color: #000 !important;
+    }
+    #join:hover{
+        color: white !important;
+        border: white 1px solid !important;
+    }
+    .top h1{
+        line-height: 8vw;
+    }
+    h2{
+        line-height: 7vw;
+    }
+    .label{
+        margin-left: 3vw;
+        margin-top: 0vw;
+        background-color: gray ;
+        justify-items: center;
+        line-height: 5vw;
+        width: 12vw;
+        color: white;
+        background-color: #000;
+        height: 5vw;
+        font-size: 2vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3vw;
+    }
+    .label:hover{
+        cursor: pointer;
+    }
+    footer a{
+        line-height: -1vw !important;
+    }
+}
+    </style>
+    <div id="loading1">
+        <div class="loader1"></div>
+    </div>
+    
+    <div id="content">
+        <nav class="head">
+            <img src="../images/BLACK logo.png" alt="logo" style="z-index: 1;" onclick="location.href='../index.html';">
+            
+            <ul>
+                <a href="../index.html">Home</a>
+                <button id="join" class="bg-white rounded-lg text-black w-12"
+                    onclick="location.href='../pages/Join.html';"><b>JOIN</b></button>
+            </ul>
+            </nav>
+            
+            <main class="content">
+                <article>
+                    <div class="label" onclick="location.href='../pages/coming.html';">#TECH</div>
+                    <div class="top">
+                        <h1>The Future of Artificial Intelligence: How AI is Transforming Our World</h1>
+                        <br> <img src="../images/article2.jpg" alt="darth and physics">
+                    </div><br>
+                    <p>Artificial Intelligence (AI) is no longer a concept confined to science fiction. It has become an integral part of
+                        our daily lives, influencing various sectors and transforming the way we live and work. From personal assistants
+                        like Siri and Alexa to advanced machine learning algorithms that drive autonomous vehicles, AI is revolutionizing
+                        our world.</p><BR><br>
+                             <h2>The Rise of AI: A Brief Overview</h2><br>
+    <p>AI technology has come a long way since its inception in the mid-20th century. Early AI research focused on basic problem-solving and symbolic methods. However, with the advent of big data, enhanced computational power, and advanced algorithms, AI has evolved into a powerful tool capable of performing complex tasks with high efficiency and accuracy.</p><br>
+    <p>Today, AI encompasses a wide range of technologies including machine learning, natural language processing, computer vision, and robotics. These technologies enable machines to learn from data, understand human language, recognize images, and perform physical tasks autonomously.</p>
+<br><br>
+<h2>AI in Healthcare</h2><br>
+<p>One of the most promising applications of AI is in the healthcare industry. AI-driven systems are improving
+    diagnostic accuracy, predicting disease outbreaks, and personalizing treatment plans. Machine learning algorithms
+    analyze vast amounts of medical data to identify patterns and make predictions, aiding doctors in making informed
+    decisions.</p><br>
+<p>AI-powered robots assist in surgeries, enhancing precision and reducing recovery times. Additionally, AI chatbots
+    provide round-the-clock support to patients, answering medical queries and scheduling appointments, thereby
+    improving healthcare accessibility and efficiency.</p><br><br>
+<h2>AI in Education</h2><br>
+<p>AI is also transforming the education sector by personalizing learning experiences and automating administrative
+    tasks. Intelligent tutoring systems adapt to individual student needs, providing customized feedback and resources.
+    This personalized approach helps students learn at their own pace and improves educational outcomes.</p><br>
+<p>Furthermore, AI automates administrative tasks such as grading and scheduling, allowing educators to focus more on
+    teaching and student engagement. AI-driven analytics also provide insights into student performance, enabling
+    educators to identify areas for improvement and tailor their teaching strategies accordingly.</p>
+<br><br>
+<h2>AI in Transportation</h2><br>
+<p>The transportation industry is witnessing a significant transformation with the integration of AI. Autonomous
+    vehicles, powered by AI, are expected to revolutionize mobility by reducing accidents, optimizing traffic flow, and
+    providing efficient transportation solutions.</p><br>
+<p>AI algorithms analyze traffic patterns and predict congestion, enabling smart traffic management systems that improve
+    urban mobility. Additionally, AI-powered logistics and supply chain management systems enhance efficiency, reduce
+    costs, and ensure timely deliveries.</p><br><br>
+    <h2>The Ethical Implications of AI</h2><br>
+    <p>While AI holds immense potential, it also raises ethical and societal concerns. Issues such as data privacy,
+        algorithmic bias, and job displacement need to be addressed to ensure the responsible and equitable use of AI.
+        Policymakers, technologists, and ethicists must work together to create frameworks that promote transparency,
+        fairness, and accountability in AI systems.</p><br>
+    <p>Moreover, it is essential to ensure that AI benefits all sections of society. Efforts should be made to bridge the
+        digital divide and provide access to AI technologies and education, enabling individuals from diverse backgrounds to
+        participate in and benefit from the AI revolution.</p><br><br>
+        <h2>The Future of AI</h2><br>
+        <p>As AI continues to advance, its impact on our world will only grow. Future developments in AI are expected to drive
+            innovation across various fields, from climate change mitigation and sustainable development to space exploration
+            and beyond.</p><br>
+        <p>By harnessing the power of AI responsibly and ethically, we can create a future where AI serves as a force for good,
+            enhancing human capabilities and solving some of the world's most pressing challenges.</p><bR>
+                <p>In conclusion, the future of artificial intelligence is bright and full of possibilities. As we navigate this
+                    transformative journey, it is crucial to remain mindful of the ethical implications and strive for a future where AI
+                    benefits all of humanity.</p>
+                </article>
+            </main>
+<footer>
+    <div id="col" class="col1"><img src="../images/BLACK logo.png" alt="logo" id="colimg">
+        <p id="copyright">&copy; 2024 Muhmd Samy<br>all rights reserved</p>
+    </div>
+    <div id="col">
+        <p><b>Navigate</b></p><br>
+        <ul>
+            <a href="../pages/About.html">About</a><br><a href="./pages/coming.html">Articles</a><br><a
+                href="./pages/coming.html">Learnify</a><br><a href="../pages/contact.html">Contact</a><br><a
+                href="../pages/Join.html">Join</a><br>
+        </ul>
+    </div>
+    <div id="col" class="col3">
+        <p><b>Topics</b></p><br>
+        <ul>
+            <a href="./pages/coming.html">Science</a><br><a href="./pages/coming.html">Tech</a><br><a
+                href="./pages/coming.html">History</a><br><a href="./pages/coming.html">Space</a><br><a
+                href="./pages/coming.html">How To</a><br>
+        </ul>
+    </div><br><br>
+</footer><br>
+</body>
+</html>

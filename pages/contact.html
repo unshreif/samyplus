@@ -67,7 +67,7 @@ nav ul > button {
   height: 5vh;
 }
 .con{
-    margin-left: 10vw;
+
    align-items: center;
             text-align: center;
             justify-content: center;
@@ -103,13 +103,20 @@ nav ul > button {
     footer a{
         text-decoration: none;
         color: #000;
-        margin-left: 2vw;
     }
     #sub:hover{
         background-color: white;
         color: black;
         cursor: pointer;
     }
+form input,form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
     @media only screen and (max-width: 600px) {
     ul li{
         line-height: 7vw;
@@ -135,7 +142,6 @@ nav ul > button {
     }
     nav ul > a{
         display: block !important;
-        margin-top: 1vw;
     }
     nav ul {
         display: flex !important;
@@ -153,6 +159,23 @@ nav ul > button {
         color: white !important;
         border: white 1px solid !important;
     }
+ form input{
+        height: 7vw;
+    }
+    #sub{
+        height: 3vh;
+        width: 15vw;
+    }
+    nav a{
+        font-size: 3vw;
+        margin-top: -0.5vw;
+    }
+    nav img{
+        width: 8vw;
+    }
+    footer p,a{
+        font-size: 3vw;
+    }
 }
 </style>
 <body>
@@ -166,7 +189,7 @@ nav ul > button {
             
                 <ul>
                     <a href="../index.html">Home</a>
-                    <button id="join" class="bg-white rounded-lg text-black w-12" onclick="location.href='./pages/Join.html';"><b>JOIN</b></button>
+                    <button id="join" class="bg-white rounded-lg text-black w-12" onclick="location.href='../pages/Join.html';"><b>JOIN</b></button>
                 </ul>
             </nav>
             <div class="con">
@@ -193,9 +216,9 @@ nav ul > button {
                 <div id="col">
                     <p><b>Navigate</b></p><br>
                     <ul>
-                        <a href="./pages/coming.html">About</a><br><a href="./pages/coming.html">Articles</a><br><a
-                            href="./pages/coming.html">Learnify</a><br><a href="./pages/coming.html">Contact</a><br><a
-                            href="./pages/Join.html">Join</a><br>
+                        <a href="../pages/About.html">About</a><br><a href="./pages/coming.html">Articles</a><br><a
+                            href="./pages/coming.html">Learnify</a><br><a href="../pages/contact.html">Contact</a><br><a
+                            href="../pages/Join.html">Join</a><br>
                     </ul>
                 </div>
                 <div id="col" class="col3">

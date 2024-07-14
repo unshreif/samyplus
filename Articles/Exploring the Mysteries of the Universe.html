@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../file.js"></script>
+    <link rel="icon" type="image/x-icon" href="../images/fvicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring the Mysteries of the Universe: From Distant Galaxies
+    b to Dark Matter</title>
+</head>
+
+<body>
+    <style>
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        nav a {
+            margin: 1vw;
+            margin-bottom: 1vw;
+            text-decoration: none;
+            color: black;
+        }
+
+        #join:hover {
+            color: white;
+            background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+            animation: slidebg 5s linear infinite;
+        }
+
+        @keyframes slidebg {
+            to {
+                background-position: 20vw;
+            }
+        }
+
+        nav ul {
+            margin-top: 0vw;
+            margin-right: 1vw;
+            margin-top: 1vw;
+        }
+
+        #logo {
+            margin-top: 0vw;
+            width: 5vw;
+            height: 5vw;
+            z-index: 1;
+        }
+
+        nav ul>button {
+            border-radius: 4vw;
+            color: black;
+            cursor: pointer;
+            margin-left: 2vw;
+            background-color: none;
+            border: 1px solid white;
+            width: 6vw;
+            height: 5vh;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 2vw;
+        }
+
+        ul li {
+            line-height: 2vw;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: white(141, 16, 16, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 10px 20px;
+            z-index: 1000;
+            height: 4vw;
+            border-radius: 0vw 0vw 3vw 3vw;
+        }
+
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #colimg {
+            width: 8vw;
+        }
+
+        footer a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .loader1 {
+            width: 40px;
+            aspect-ratio: 1;
+            --c: linear-gradient(#000 0 0);
+            --m: radial-gradient(farthest-side, #000 92%, #0000);
+            background:
+                var(--c), var(--m),
+                var(--c), var(--m),
+                var(--c), var(--m);
+            background-size: 8px 15px, 8px 8px;
+            background-repeat: no-repeat;
+            animation: l14 1s infinite alternate;
+        }
+
+        @keyframes l14 {
+
+            0%,
+            10% {
+                background-position: 0 0, 0 100%, 50% 0, 50% 100%, 100% 0, 100% 100%
+            }
+
+            33% {
+                background-position: 0 100%, 0 0, 50% 0, 50% 100%, 100% 0, 100% 100%
+            }
+
+            66% {
+                background-position: 0 100%, 0 0, 50% 100%, 50% 0, 100% 0, 100% 100%
+            }
+
+            90%,
+            100% {
+                background-position: 0 100%, 0 0, 50% 100%, 50% 0, 100% 100%, 100% 0
+            }
+        }
+
+        #loading1 {
+            position: fixed;
+            width: 100%;
+            height: 104vh;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -2vw;
+        }
+
+        #content {
+            display: none;
+        }
+
+        .top {
+            margin-top: 3vw;
+            text-align: center;
+        }
+
+        .top h1 {
+            line-height: 4vw;
+        }
+
+        .top img {
+            width: 80vw;
+            height: 50vw;
+            border-radius: 3vw;
+        }
+
+        .label {
+            margin-left: 7vw;
+            margin-top: 2vw;
+            background-color: gray;
+            justify-items: center;
+            line-height: 1vw;
+            width: 5VW;
+            color: white;
+            background-color: #000;
+            height: 1vw;
+            font-size: 1vw;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3vw;
+        }
+
+        .label:hover {
+            cursor: pointer;
+        }
+
+        article {
+            padding: 3vw;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        @media only screen and (max-width: 600px) {
+            ul li {
+                line-height: 7vw;
+            }
+
+            .head img {
+                width: 10vw;
+                z-index: 0;
+            }
+
+            .head a {
+                font-size: 3vw;
+                margin-top: 0.5vw;
+            }
+
+            main {
+
+                h3,
+                p,
+                ul {
+                    line-height: 8vw;
+                }
+            }
+
+            nav {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: space-between !important;
+                color: black !important;
+            }
+
+            nav ul>a {
+                display: block !important;
+                margin-top: 1vw;
+            }
+
+            nav ul {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: space-between !important;
+            }
+
+            nav ul>button {
+                border: #000 1px solid !important;
+                margin-top: 0vw !important;
+            }
+
+            #join {
+                color: #000 !important;
+            }
+
+            #join:hover {
+                color: white !important;
+                border: white 1px solid !important;
+            }
+
+            .top h1 {
+                line-height: 8vw;
+            }
+
+            h2 {
+                line-height: 7vw;
+            }
+
+            .label {
+                margin-left: 3vw;
+                margin-top: 0vw;
+                background-color: gray;
+                justify-items: center;
+                line-height: 5vw;
+                width: 12vw;
+                color: white;
+                background-color: #000;
+                height: 5vw;
+                font-size: 2vw;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3vw;
+            }
+
+            .label:hover {
+                cursor: pointer;
+            }
+
+            footer a {
+                line-height: -1vw !important;
+            }
+        }
+    </style>
+    <div id="loading1">
+        <div class="loader1"></div>
+    </div>
+
+    <div id="content">
+        <nav class="head">
+            <img src="../images/BLACK logo.png" alt="logo" style="z-index: 1;" onclick="location.href='../index.html';">
+
+            <ul>
+                <a href="../index.html">Home</a>
+                <button id="join" class="bg-white rounded-lg text-black w-12"
+                    onclick="location.href='../pages/Join.html';"><b>JOIN</b></button>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <article>
+                <div class="label" onclick="location.href='../pages/coming.html';">#TECH</div>
+                <div class="top">
+                    <h1>Exploring the Mysteries of the Universe: From Distant Galaxies to Dark Matter</h1>
+                    <br> <img src="../images/article3.jpg" alt="darth and physics">
+                </div><br>
+                <p>The universe is vast and filled with wonders that boggle the mind and spark the imagination. From the swirling dance of
+                distant galaxies to the elusive nature of dark matter, our quest to understand the cosmos is a journey filled with awe
+                and discovery. Let’s embark on an exploration of some of the most fascinating mysteries of the universe.</p><BR><br>
+                <h2>>Distant Galaxies: The Light of the Past</h2><br>
+                <p>Galaxies are the fundamental building blocks of the universe, each containing billions of stars, planets, and other
+                celestial bodies. The light we see from distant galaxies has traveled for millions, even billions, of years to reach us,
+                providing a glimpse into the past. Through powerful telescopes, astronomers study these ancient lights to understand the
+                formation and evolution of galaxies.</p><br>
+                <p>One of the most incredible discoveries is that the universe is expanding, a fact first observed by Edwin Hubble in the
+                early 20th century. This expansion means that galaxies are moving away from us, and the farther away they are, the
+                faster they seem to be receding. This observation led to the formulation of the Big Bang theory, which describes the
+                origin of the universe as a massive explosion that occurred around 13.8 billion years ago.</p>
+                <br><br>
+                <h2>>Black Holes: The Dark Hearts of Galaxies</h2><br>
+                <p>At the centers of many galaxies, including our own Milky Way, lie mysterious and powerful objects known as black holes.
+                These regions of space have gravitational pulls so strong that not even light can escape them. Black holes are formed
+                from the remnants of massive stars that have collapsed under their own gravity.</p><br>
+                <p>Recent advancements in astronomy, such as the Event Horizon Telescope, have allowed us to capture the first-ever image
+                of a black hole, providing direct evidence of their existence. Despite these advancements, black holes remain one of the
+                most enigmatic phenomena in the universe, challenging our understanding of physics and the nature of spacetime.</p><br><br>
+                <h2>Dark Matter: The Invisible Universe</h2><br>
+                <p>While stars and galaxies are visible to us, they account for only a small fraction of the universe’s total mass. The
+                majority of the universe’s mass is made up of a mysterious substance known as dark matter. Unlike ordinary matter, dark
+                matter does not emit, absorb, or reflect light, making it invisible and detectable only through its gravitational
+                effects on visible matter.
+                </p><br>
+                <p>Scientists have observed that galaxies rotate at speeds that cannot be explained by the gravitational pull of visible
+                matter alone. This discrepancy suggests the presence of dark matter, which exerts additional gravitational forces.
+                Despite its elusive nature, dark matter plays a crucial role in the formation and structure of galaxies, acting as the
+                cosmic scaffolding that holds the universe together.<br><br>
+                <h2>Dark Energy: The Force Accelerating the Universe</h2><br>
+                <p>In addition to dark matter, another mysterious force known as dark energy is driving the accelerated expansion of the
+                universe. Discovered in the late 1990s, dark energy constitutes about 68% of the universe’s total energy density. Its
+                nature remains one of the biggest puzzles in cosmology.</p><br>
+                <p>Dark energy appears to work in opposition to gravity, causing galaxies to move apart at an ever-increasing rate.
+                Understanding dark energy is critical to unraveling the fate of the universe, as it will determine whether the cosmos
+                will continue to expand indefinitely, eventually collapse, or reach a stable state.</p><br><br>
+                <h2>The Quest for Knowledge</h2><br>
+                <p>The mysteries of the universe continue to captivate scientists and enthusiasts alike. With each new discovery, we come
+                closer to understanding the fundamental nature of the cosmos. The pursuit of knowledge about distant galaxies, black
+                holes, dark matter, and dark energy not only satisfies our curiosity but also drives technological advancements and
+                inspires future generations of explorers.</p><br>
+                <p>As we gaze at the stars and ponder the vastness of space, we are reminded of the boundless possibilities that the
+                universe holds. The journey to uncover its secrets is far from over, and the future of astronomy and cosmology promises
+                to be as exciting and enlightening as the discoveries we have made so far.</p><br><br>
+                <p><strong> In conclusion,</strong> the universe is a treasure trove of mysteries waiting to be explored. From the light of distant galaxies
+            to the invisible realms of dark matter and dark energy, each discovery brings us closer to understanding the grand
+            tapestry of the cosmos. Let us continue to embrace the spirit of exploration and marvel at the wonders of the universe</p>
+            </article>
+        </main>
+        <footer>
+            <div id="col" class="col1"><img src="../images/BLACK logo.png" alt="logo" id="colimg">
+                <p id="copyright">&copy; 2024 Muhmd Samy<br>all rights reserved</p>
+            </div>
+            <div id="col">
+                <p><b>Navigate</b></p><br>
+                <ul>
+                    <a href="../pages/About.html">About</a><br><a href="./pages/coming.html">Articles</a><br><a
+                        href="./pages/coming.html">Learnify</a><br><a href="../pages/contact.html">Contact</a><br><a
+                        href="../pages/Join.html">Join</a><br>
+                </ul>
+            </div>
+            <div id="col" class="col3">
+                <p><b>Topics</b></p><br>
+                <ul>
+                    <a href="./pages/coming.html">Science</a><br><a href="./pages/coming.html">Tech</a><br><a
+                        href="./pages/coming.html">History</a><br><a href="./pages/coming.html">Space</a><br><a
+                        href="./pages/coming.html">How To</a><br>
+                </ul>
+            </div><br><br>
+        </footer><br>
+</body>
+
+</html>

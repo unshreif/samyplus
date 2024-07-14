@@ -33,16 +33,16 @@ nav ul{
 }
 
 nav ul > button {
- border-radius: 9vw !important;  
-  color: #fff;
+ border-radius: 4vw;  
+  color: black;
   cursor: pointer;
   margin-left: 2vw;
-  background-color: none;
+  background-color: none !important;
   border: 1px solid white;
-  color: white;
- width: 15vw;
-  z-index: 1000;
+  width: 6vw;
+  height: 5vh;
 }
+
 nav{
     padding: 10px 20px;
   z-index: 1000;
@@ -157,9 +157,7 @@ section{
   margin-left: 2vw;
   font-size: 1vw;
 }
-#bgmob{
-  display: none;
-}
+
 #invitation{
   color: white;
     margin-top: -40vw;
@@ -250,6 +248,15 @@ a{
       display: none;
     }
   }
+  nav{
+    img,ul {
+      top: 9vw;
+    }
+  }
+  #cf{
+    padding: 20vw;
+    margin-bottom: 10% !important;
+  }
   #logo {
     width: 30vw;
     margin-top: 20vw;
@@ -298,7 +305,7 @@ h1 span{
   }
 
   #section2 {
-    margin-top: -25vw;
+    margin-top: -27vw;
     height:51vh;
   }
   #section2 h2 {
@@ -418,8 +425,7 @@ footer{
 
   #section3 p {
     display: none;
-  }
-}
+  }}
 
 ::-webkit-scrollbar {
   width: 10px;
