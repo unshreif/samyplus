@@ -412,7 +412,8 @@ footer{
   flex-direction: row !important;
   justify-content: space-between !important;
 }
-
+#logo{
+	width:4vw;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
