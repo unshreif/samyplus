@@ -412,9 +412,7 @@ footer{
   flex-direction: row !important;
   justify-content: space-between !important;
 }
-   footer p,a{
-        font-size: 3vw;
-    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -705,4 +703,3 @@ footer{
   position: relative;
   top:60px; 
 }
-
