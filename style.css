@@ -157,9 +157,7 @@ section{
   margin-left: 2vw;
   font-size: 1vw;
 }
-#bgmob{
-  display: none;
-}
+
 #invitation{
   color: white;
     margin-top: -40vw;
@@ -250,6 +248,15 @@ a{
       display: none;
     }
   }
+  nav{
+    img,ul {
+      top: 9vw;
+    }
+  }
+  #cf{
+    padding: 20vw;
+    margin-bottom: 10% !important;
+  }
   #logo {
     width: 30vw;
     margin-top: 20vw;
@@ -298,7 +305,7 @@ h1 span{
   }
 
   #section2 {
-    margin-top: -25vw;
+    margin-top: -27vw;
     height:51vh;
   }
   #section2 h2 {
@@ -696,3 +703,4 @@ footer{
   position: relative;
   top:60px; 
 }
+
