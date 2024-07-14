@@ -14,8 +14,7 @@
     height: 100vh;
 }
 body{
-                                                                      font-family: 'Blockletter', sans-serif;
-                                                
+font-family: 'Blockletter', sans-serif;                                                
 }
 
 nav a {
@@ -34,13 +33,20 @@ nav ul{
 }
 
 nav ul > button {
- border-radius: 4vw;  
+ border-radius: 9vw !important;  
   color: #fff;
   cursor: pointer;
   margin-left: 2vw;
   background-color: none;
   border: 1px solid white;
   color: white;
+ width: 15vw;
+  z-index: 1000;
+}
+nav{
+    padding: 10px 20px;
+  z-index: 1000;
+  height: 4vw;
 }
 
 #learnify {
@@ -214,13 +220,14 @@ a{
 		text-transform: uppercase;
 		font-weight: 700;
 	font-family: 'Space Crusaders', sans-serif;
-		background: linear-gradient(to right, #00FFFF 50%, yellow 60%);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 5s linear infinite;
 		background-size: auto auto;
 		background-size: 200% auto;
 		text-fill-color: transparent;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		animation: textclip 5s linear infinite;
+		animation: textclip 15s linear infinite;
 		display: inline-block;
 	}
 }
@@ -238,15 +245,22 @@ a{
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
+    margin-top: 0vw;
     ul a {
       display: none;
     }
   }
   #logo {
     width: 30vw;
-    margin-top: 2vw;
+    margin-top: 20vw;
     margin-left: 2vw;
   }
+  .wrapper h1{
+color: white;
+margin-top: 8vw;
+   background-image: linear-gradient(90deg,#00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 5s linear infinite;}
+
   #join {
     font-size: 2vw;
     margin-top: 4vw;
@@ -254,7 +268,7 @@ a{
     width: 15vw;
     background: none;
     border: white solid 1px;
-    color: white !important;
+    color: white ;
     margin-right: 0vw;
   }
   .wrapper h1{
@@ -339,16 +353,7 @@ h1 span{
   #text {
     margin-bottom: 4.5vw;
   }
-  #bg{
-    display: none;
-  }
-  #bgmob{
-    display: block;
-      margin-top: -9vw;
-  position: absolute;
-  z-index: -2;
-  margin-left: -2vw;
-  }
+
   #post img{
     width: 200vw;
     margin-left: -15vw;
@@ -395,6 +400,11 @@ h1 span{
   #section4{
     top: -9vw !important;
   }
+footer{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
 
 }
 
@@ -686,4 +696,3 @@ h1 span{
   position: relative;
   top:60px; 
 }
-
