@@ -27,18 +27,24 @@ SamyPlus is designed to be a go-to resource for science lovers. We provide a wid
 To get started with SamyPlus, follow these steps:
 
 1. **Visit Our Website**: Head over to [SamyPlus](https://unshreif.github.io/samyplus/) to explore our articles and features.
-2. **Create an Account**: Sign up to personalize your experience and participate in the community. -coming soon-
-3. **Explore Content**: Browse through our categories and start reading articles that interest you.
-4. **Join the Community**: Engage with other users by leaving comments and participating in discussions. -coming soon-
+3. **Create an Account**: Sign up to personalize your experience and participate in the community. -coming soon-
+4. **Explore Content**: Browse through our categories and start reading articles that interest you.
+5. **Join the Community**: Engage with other users by leaving comments and participating in discussions. -coming soon-
 
 ##Usage
+
 Open the index.html file in your web browser to explore the local version of the SamyPlus website. You can make changes and see how they affect the site in real-time.
+
 We welcome contributions from the community! To contribute to SamyPlus just Fork the Repository and Open a Pull Request.
 
 ##contact
+
 If you have any questions, suggestions, or feedback, feel free to reach out to us:
 
 Email: iunshreif@gmail.com
+
 Website: [SamyPlus](https://unshreif.github.io/samyplus/)
+
 GitHub: [unshreif](https://github.com/unshreif)
+
 Thank you for being a part of the SamyPlus community!
