@@ -31,13 +31,15 @@ To get started with SamyPlus, follow these steps:
 4. **Explore Content**: Browse through our categories and start reading articles that interest you.
 5. **Join the Community**: Engage with other users by leaving comments and participating in discussions. -coming soon-
 
-##Usage
+## Usage
 
 Open the index.html file in your web browser to explore the local version of the SamyPlus website. You can make changes and see how they affect the site in real-time.
 
+## contribution
+
 We welcome contributions from the community! To contribute to SamyPlus just Fork the Repository and Open a Pull Request.
 
-##contact
+## contact
 
 If you have any questions, suggestions, or feedback, feel free to reach out to us:
 
