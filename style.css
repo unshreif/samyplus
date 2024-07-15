@@ -258,7 +258,7 @@ a{
     margin-bottom: 10% !important;
   }
   #logo {
-    width: 30vw;
+    width: 20vw !important;
     margin-top: 20vw;
     margin-left: 2vw;
   }
@@ -412,8 +412,7 @@ footer{
   flex-direction: row !important;
   justify-content: space-between !important;
 }
-#logo{
-	width:4vw;
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
