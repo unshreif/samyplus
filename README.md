@@ -43,7 +43,7 @@ We welcome contributions from the community! To contribute to SamyPlus just Fork
 
 If you have any questions, suggestions, or feedback, feel free to reach out to us:
 
-Email: iunshreif@gmail.com
+Email: unshreif@gmail.com
 
 Website: [SamyPlus](https://unshreif.github.io/samyplus/)
 
